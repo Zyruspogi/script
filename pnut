@@ -1850,6 +1850,19 @@ GetKeyButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 GetKeyButton.Text = "Get Key"
 GetKeyButton.Parent = frame
 --------------------------------------------------------------------------
+SubmitButton.MouseButton1Click:Connect(function()
+    local KeySystem = KeySystem.Text
+    if KeySystem == "123" then   
+screenGui:Destroy()
+
+--Your Script
+  
+  end
+end)
+
+GetKeyButton.MouseButton1Click:Connect(function()
+ setclipboard("Paste here your link to get the key") 
+end) 
 	
 	return TabFunction
 end   
